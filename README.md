@@ -46,11 +46,9 @@ Use XAMPP, WAMP, or any local PHP server.
 Place the project folder in the server's htdocs directory.
 Start the Server:
 bash
-Copy code
 php -S localhost:8000
 Visit the Application: Open your browser and go to:
 arduino
-Copy code
 http://localhost/project/index.php
 🌐 Pages Overview
 1. Landing Page (index.php)
@@ -77,15 +75,5 @@ This project is licensed under the MIT License. See the LICENSE file for details
 For any questions or suggestions, please reach out at:
 
 Name: Dijar Qelaj
-Email: your-email@example.com
+Email: diarqelaj15@gmail.com
 GitHub: diarqelaj
-yaml
-Copy code
-
----
-
-### Customizing It for Your Needs
-- Replace placeholders like `your-email@example.com` or `https://github.com/your-username/your-repository.git` with your actual details.
-- Add or remove features based on your final implementation.
-
-Let me know if you need help tweaking this further! 😊
