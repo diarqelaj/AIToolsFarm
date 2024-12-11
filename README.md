@@ -40,7 +40,7 @@ Copy code
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/your-repository.git
+   git clone https://github.com/diarqelaj/AIToolsFarm.git
 Set Up a Local PHP Server:
 Use XAMPP, WAMP, or any local PHP server.
 Place the project folder in the server's htdocs directory.
