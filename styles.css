@@ -7,104 +7,258 @@ body, h1, h2, p {
 
 /* Body Styling */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
     margin: 0;
-    background-color: #f5f5f5;
+    background-color: #f9f9f9;
     color: #333;
-    text-align: center;
 }
 
 /* Header Styling */
 header {
-    background-color: #40916c;
+    background-color: #2d6a4f;
     color: white;
-    padding: 20px 0;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #1b4332;
 }
 
 header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 5px;
 }
 
 header p {
-    font-size: 1.2em;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 5px;
 }
 
 /* Main Content Styling */
 main {
-    padding: 30px 20px;
+    padding: 50px 20px;
 }
 
 main h2 {
-    font-size: 2em;
+    font-size: 2rem;
     color: #2d6a4f;
     margin-bottom: 20px;
+    font-weight: 500;
+    text-align: center;
 }
 
-main p {
-    font-size: 1.2em;
+/* AI Tools Section */
+.ai-tools {
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 800px;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.ai-tools ul {
+    list-style: none;
+    padding: 0;
+}
+
+.ai-tools ul li {
+    display: flex;
+    align-items: flex-start;
     margin-bottom: 15px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+.ai-tools p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 20px;
+    line-height: 1.8;
 }
 
 /* Call-to-Action Button */
 .cta {
+    text-align: center;
     margin-top: 30px;
 }
 
 .cta a {
-    display: inline-block;
-    background-color: #2d6a4f;
+    background: #1b4332;
     color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
     text-decoration: none;
-    padding: 15px 30px;
-    font-size: 1.2em;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: inline-block;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .cta a:hover {
-    background-color: #1b4332;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Footer Styling */
 footer {
     background-color: #2d6a4f;
     color: white;
-    padding: 10px 0;
-    margin-top: 30px;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-top: 50px;
+    border-top: 3px solid #1b4332;
 }
 
-footer p {
-    font-size: 0.9em;
+img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #f0f0f0; /* Placeholder background */
+    border: 1px solid #ccc;
 }
-/* AI Tools Section Styling */
-.ai-tools {
-    margin: 30px auto;
+img:after {
+    content: 'Image not available';
+}
+.feather {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 450px;
+    background: url('images/modern-farm.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero .overlay {
+    background: rgba(0, 0, 0, 0.5);
     padding: 20px;
-    max-width: 800px;
-    text-align: left;
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
-.ai-tools h2 {
-    color: #2d6a4f;
-    font-size: 2em;
+.hero h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
     margin-bottom: 20px;
 }
 
-.ai-tools ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    font-size: 1.2em;
-    line-height: 1.8;
-    color: #333;
+.cta-button {
+    padding: 12px 25px;
+    font-size: 1rem;
+    background: linear-gradient(45deg, #4caf50, #2e7d32);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
 }
 
-.ai-tools p {
-    font-size: 1.2em;
-    margin-top: 20px;
-    color: #555;
+.cta-button:hover {
+    background: linear-gradient(45deg, #66bb6a, #388e3c);
+    transform: translateY(-3px);
+}
+
+/* AI Tools Section */
+.ai-tools {
+    padding: 50px 20px;
+    background: #f9f9f9;
+}
+
+.ai-tools h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #2e7d32;
+}
+
+.ai-tools ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.ai-tools ul li {
+    flex: 1 1 calc(30% - 20px);
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: 0.3s;
+}
+
+.ai-tools ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.ai-tools ul li img {
+    width: 50px;
+    height: 50px;
+}
+
+.ai-tools ul li strong {
+    font-size: 1.1rem;
+    color: #333;
+}
+svg {
+    display: block;
+    width: 50px;
+    height: 50px;
+    fill: none;
+    stroke: currentColor; /* Ensures color is visible */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        padding: 30px 15px;
+    }
+
+    .ai-tools {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    main h2 {
+        font-size: 1.8rem;
+    }
+
+    .cta a {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
 }
